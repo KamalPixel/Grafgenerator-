@@ -1,14 +1,14 @@
 # Lab 1 – Grafgenerator for fysikkrapport 🚗📉
 
 Hei! I stedet for å plotte grafer manuelt i Excel, laget jeg et lite Python-script som automatiserer hele greia.  
-Startet som ren latskap – endte opp som et ganske nyttig verktøy.
+Startet som ren latskap, endte opp som et ganske nyttig verktøy.
 
 ## Bakgrunn
 
 Dette scriptet ble til for **lab 1 i fysikk og kjemi** (2. semester, dataingeniør).  
 Tema: kinematikk, fritt fall og sirkelbevegelse.  
 
-Målet var reproduserbare, pene grafer som er enkle å oppdatere når måledataene endrer seg – og ærlig talt: mye gøyere å kode enn å dra linjer for hånd i Excel.
+Målet var reproduserbare, pene grafer som er enkle å oppdatere når måledataene endrer seg, og ærlig talt: mye gøyere å kode enn å dra linjer for hånd i Excel.
 
 ## Hva genereres?
 
