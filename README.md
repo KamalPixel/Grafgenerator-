@@ -1,24 +1,32 @@
-Lab 1 – Grafgenerator for fysikkrapport
-Hei! I stedet for å plotte grafer manuelt i Excel bestemte jeg meg for å automatisere hele greia med Python. Startet som latskap, endte opp som et ganske nyttig lite verktøy.
-Bakgrunn
-Dette scriptet ble laget til lab 1 i fysikk og kjemi (2. semester, dataingeniør). Laben dekker kinematikk, fritt fall og sirkelbevegelse. Jeg ville ha reproduserbare grafer som jeg enkelt kunne justere hvis måledataene endret seg – og så var det jo mye gøyere å kode enn å dra linjer for hånd.
-Hva genereres?
-oppgave1_grafer.png – To subplots som viser bilens bevegelse:
+# Lab 1 – Grafgenerator for fysikkrapport 🚗📉
 
-Hastighet over tid (konstant fart → retardasjon i motbakke)
-Akselerasjon over tid (stegfunksjon: 0 → negativ)
+Hei! I stedet for å plotte grafer manuelt i Excel, laget jeg et lite Python-script som automatiserer hele greia.  
+Startet som ren latskap – endte opp som et ganske nyttig verktøy.
 
-oppgave2_sammenligning.png – Tre grupperte stolpediagram som setter forsøksdata opp mot teori:
+## Bakgrunn
 
-Falltid, akselerasjon og slutthastighet fra 1m og 2m fritt fall
+Dette scriptet ble til for **lab 1 i fysikk og kjemi** (2. semester, dataingeniør).  
+Tema: kinematikk, fritt fall og sirkelbevegelse.  
 
-Alle grafer har annotasjoner, fargekodet fasemarkering og tydelige aksetitler.
-Kjør selv
-bashpip install -r requirements.txt
+Målet var reproduserbare, pene grafer som er enkle å oppdatere når måledataene endrer seg – og ærlig talt: mye gøyere å kode enn å dra linjer for hånd i Excel.
+
+## Hva genereres?
+
+| Fil                        | Innhold                                                                 |
+|----------------------------|-------------------------------------------------------------------------|
+| `oppgave1_grafer.png`      | To subplots – bilens bevegelse:<br>• Hastighet over tid<br>• Akselerasjon over tid (stegfunksjon) |
+| `oppgave2_sammenligning.png` | Stolpediagram – forsøksdata vs teori for 1 m og 2 m fritt fall:<br>• Falltid<br>• Akselerasjon<br>• Slutthastighet |
+
+Alle grafer har:
+- tydelige annotasjoner  
+- fargekodet fasemarkering  
+- korrekte aksetitler og enheter  
+
+## Kjør selv
+
+```bash
+# Installer avhengigheter
+pip install -r requirements.txt
+
+# Generer grafene
 python generate_graphs.py
-Grafene lagres som PNG i samme mappe.
-Tech
-
-Python 3
-matplotlib – plotting og annotasjoner
-numpy – linspace for datapunkter
